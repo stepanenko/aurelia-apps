@@ -1,0 +1,11 @@
+
+<template>
+  <h1>${heading}</h1>
+
+  <form submit.trigger="addCustomer()">
+    <input type="text" value.bind="customerName">
+    <input type="text" value.bind="customerEmail">
+    <input type="text" value.bind="customerPhone">
+    <button type="submit">Add Customer</button>
+  </form>
+</template>
