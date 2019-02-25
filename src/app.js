@@ -34,7 +34,7 @@ export class App {
 
     // store in local storage - LS only stores strings (not objects)
     localStorage.setItem('customers', JSON.stringify(this.customers));
-    // this.storeCustomer(this.customerName, this.customerEmail, this.customerPhone);
+    // this.storeCustomer(this.customerName, this.customerEmail, this.customerPhone); // Brads version
 
     this.customerName = '';
     this.customerEmail = '';
