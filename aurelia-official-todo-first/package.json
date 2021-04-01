@@ -1,0 +1,103 @@
+{
+  "name": "todo",
+  "description": "An Aurelia client application.",
+  "version": "0.2.0",
+  "repository": {
+    "type": "???",
+    "url": "???"
+  },
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "aurelia-bootstrapper": "^2.3.3",
+    "aurelia-animator-css": "^1.0.4",
+    "bluebird": "^3.7.2",
+    "aurelia-polyfills": "^1.3.4"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "aurelia-cli": "^2.0.2",
+    "aurelia-testing": "^1.0.0",
+    "aurelia-tools": "^2.0.0",
+    "gulp": "^4.0.2",
+    "minimatch": "^3.0.4",
+    "through2": "^4.0.2",
+    "vinyl-fs": "^3.0.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "latest",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-istanbul": "^6.0.0",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/core": "^7.13.14",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/register": "^7.13.14",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "plugin-error": "^1.0.1",
+    "aurelia-loader-nodejs": "^1.1.0",
+    "aurelia-pal-nodejs": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "babel-core": "7.0.0-bridge.0",
+    "gulp-rename": "^2.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "copy-webpack-plugin": "^8.1.0",
+    "mini-css-extract-plugin": "^1.4.0",
+    "aurelia-webpack-plugin": "^4.0.0",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "expose-loader": "^2.0.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "del": "^6.0.0",
+    "css-loader": "^5.2.0",
+    "file-loader": "^6.2.0",
+    "json-loader": "^0.5.7",
+    "html-loader": "^2.1.2",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "opn": "^6.0.0",
+    "webpack-bundle-analyzer": "latest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^aurelia-binding$": "<rootDir>/node_modules/aurelia-binding"
+    },
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>/node_modules"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testRegex": "\\.spec\\.js$",
+    "setupFiles": [
+      "<rootDir>/test/jest-pretest.js"
+    ],
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/*.spec.js",
+      "!**/node_modules/**",
+      "!**/test/**"
+    ],
+    "coverageDirectory": "<rootDir>/test/coverage-jest",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
+    ]
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "main": "dist/app.bundle.js"
+}
